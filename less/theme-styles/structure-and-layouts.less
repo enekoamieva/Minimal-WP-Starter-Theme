@@ -1,0 +1,202 @@
+/*--------------------------------------------------------------
+## Default site content
+--------------------------------------------------------------*/
+.site-content {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+#primary {
+	max-width: 700px;
+	margin: 55px auto 0;
+	padding: 63px 3%;
+}
+
+.button {
+	background-color: @color-base;
+	border: 1px solid @color-base;
+	padding: 14px 50px 10px;
+	color: #fff !important;
+	.font-size(20);
+	font-weight: 400;
+	border-radius: 5px;
+}
+
+/*--------------------------------------------------------------
+## Index Page
+--------------------------------------------------------------*/
+.posts-wrapper {
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 60px 3% 0;
+
+	.post {
+		padding-bottom: 30px;
+	}
+
+	img {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.entry-title {
+		.font-size(26);
+	}
+
+	p {
+		margin: 0;
+	}
+}
+
+
+/*--------------------------------------------------------------
+## Home Page
+--------------------------------------------------------------*/
+.home.blog {
+
+	#primary {
+		max-width: 1200px;
+		margin: 0 auto;
+
+		.posts-wrapper {
+			max-width: 700px;
+			margin: 0 auto;
+			padding: 60px 3% 0;
+			display: inherit;
+		
+			.post {
+				padding-bottom: 60px;
+			}
+		
+			img {
+				width: 100%;
+				margin-bottom: 10px;
+			}
+		
+			.entry-title {
+				.font-size(26);
+			}
+		
+			p {
+				margin: 0;
+			}
+		}
+	}
+
+}
+
+/*--------------------------------------------------------------
+## Articles Blog Page & Search Page
+--------------------------------------------------------------*/
+.blog,
+.search {
+
+	#primary {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.entry-header {
+		.archive-title {
+			.entry-title {
+				text-align: center;
+				margin-bottom: 30px;
+			}
+		}
+	}
+
+	.posts-wrapper {
+		max-width: 100%;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+
+		article.post {
+			flex-basis: calc(50% - 30px);
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+## Page & Singular
+--------------------------------------------------------------*/
+.page #primary,
+.single #primary {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.single #primary {
+	.post {
+		.entry-header {
+			img {
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+## Page 404
+--------------------------------------------------------------*/
+input[id="s"],
+input[id="searchsubmit"] {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 30px;
+}
+
+input[id="searchsubmit"] {
+	padding: 14px 50px;
+}
+
+/*--------------------------------------------------------------
+## No Search
+--------------------------------------------------------------*/
+.search-no-results #primary{
+	text-align: center;
+
+	.posts-wrapper {
+		margin-top: 50px;
+		justify-content: center;
+
+		h5 {
+			margin-bottom: 30px;
+		}
+	}
+
+}
+
+/*--------------------------------------------------------------
+## Content Sidebar Layout
+--------------------------------------------------------------*/
+.page-template-content-sidebar .site-content,
+.post-template-content-sidebar .site-content {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+
+	#primary {
+		max-width: 100%;
+		flex-basis: calc(66% - 30px);
+	}
+
+	#secondary {
+		max-width: 100%;
+		flex-basis: calc(33% - 30px);
+		margin: 55px auto 0;
+    	
+	}
+}
+
+/*--------------------------------------------------------------
+## Full width Layout
+--------------------------------------------------------------*/
+.page-template-full-width-content .site-content,
+.post-template-full-width-content .site-content {
+	#primary {
+		max-width: 1200px;
+	}
+}

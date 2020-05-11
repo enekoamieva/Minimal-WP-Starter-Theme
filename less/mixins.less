@@ -1,0 +1,22 @@
+/*** Non parametrics ***/
+.clearfix() { //https://gist.github.com/geddski/2416187
+    zoom: 1;
+    &:before, &:after { content:""; display:table; }
+    &:after { clear: both; }
+}
+
+
+/*** Parametrics ***/
+//Font size in px & rem
+.font-size(@size) {
+    @rem: @size / 10; //Tamaño base
+    font-size: @size * 1px; //Return font size in px
+    font-size: @rem * 1rem; //Return font size in rem
+}
+
+//Line height in px & rem
+.line-height(@size) {
+    @rem: @size / 10; //Tamaño base
+    line-height: @size * 1px; //Return line height in px
+    line-height: @rem * 1rem; //Return line height in rem
+}

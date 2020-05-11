@@ -1,0 +1,47 @@
+.entry-meta {
+    a {
+        color: @color-primary;
+        
+    }
+}
+
+.entry-header {
+    a {
+        color: @color-base;
+        text-decoration: none;
+    
+        &:hover {
+            color: @color-primary;
+        }
+    
+    }
+}
+
+/*--------------------------------------------------------------
+## Pagination
+--------------------------------------------------------------*/
+.pagination {
+	width: 100%;
+	padding-top: 30px;
+	text-align: center;
+    .font-size(18);
+    
+    a {
+        color: @color-base;
+        text-decoration: none;
+
+        &:hover {
+            color: @color-primary;
+        }
+    }
+
+	.page-numbers {
+        margin: 10px;
+
+		&.current {
+			background-color: @color-base;
+			color: #fff;
+			padding: 10px;
+		}
+	}
+}

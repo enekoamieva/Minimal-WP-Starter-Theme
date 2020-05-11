@@ -1,0 +1,40 @@
+/*--------------------------------------------------------------
+## Sidebar
+--------------------------------------------------------------*/
+#secondary {
+    max-width: 100%;
+
+    .widgets {
+        margin: 60px auto 0;
+        padding: 0 6%;
+        /* background-color: @gray-color; */
+
+        .widget {
+            margin-bottom: 40px;
+        }
+
+        h3 {
+            .font-size(21);
+            margin-bottom: 5px;
+        }
+    }
+}
+
+/*--------------------------------------------------------------
+## Footer Widgets
+--------------------------------------------------------------*/
+#footer-widget-area {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 60px 3%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    background-color: @gray-color;
+
+    .widgets {
+       flex-basis: calc(33% - 30px);
+        text-align: center;
+    }
+}

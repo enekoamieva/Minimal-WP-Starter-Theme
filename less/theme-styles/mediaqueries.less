@@ -1,0 +1,133 @@
+@media screen and (max-width: 1025px) {
+    #primary {
+        margin: 0 auto;
+    }
+
+    .site-header {
+        position: inherit;
+
+        .header-content {
+            display: flex;
+            flex-flow: column wrap;
+            padding: 10px 3%;
+
+            .site-branding,
+            .site-title,
+            .main-navigation {
+                flex-basis: 100% !important;
+                padding: 0;
+                text-align: center;
+            }
+            .site-description {
+                display: none;
+            }
+
+            .main-navigation {
+                .nav-menu {
+                    width: 100%;
+
+                    ul {
+                        justify-content: center;
+                    }
+                }
+            }
+
+        }
+    }// .site-header
+
+    .home.blog {
+        #primary {
+
+            .posts-wrapper {
+                padding-top: 0;
+            }
+        }
+    }//.home.blog
+
+    .blog,
+    .search {
+        #primary {
+
+            .posts-wrapper {
+                padding-top: 0;
+
+                article.post {
+                    flex-basis: 100%;
+                }
+            }
+        }
+    }//.blog
+
+    .site-footer {
+        .site-info {
+            flex-flow: column wrap;
+    
+            .secondary-navigation {
+                padding-top: 5px;
+
+                ul {
+                    justify-content: center;
+    
+                }
+            }
+        }
+    }// .footer
+
+    #secondary { 
+        .widgets {
+            margin: 0 auto;
+        }
+    }// #secondary
+
+    #footer-widget-area {
+        flex-flow: row wrap;
+        padding: 60px 6%;
+
+    
+        .widgets {
+            flex-basis: 100%;
+        }
+    }//#footer-widget-area
+
+    .page-template-content-sidebar .site-content,
+    .post-template-content-sidebar .site-content {
+        flex-flow: row wrap;
+      
+
+        #primary {
+            flex-basis: 100%;
+        }
+
+        #secondary {
+            flex-basis: 100%;
+            
+        }
+    }// .page-content-sidebar & .post-content-sidebar
+}
+
+@media screen and (max-width: 767px) {
+    h1 {
+        .font-size(30);
+    }
+
+    h2 {
+        .font-size(25);
+    }
+
+    h3 {
+        .font-size(22);
+    }
+
+    h4 {
+        .font-size(20);
+    }
+
+    h5 {
+        .font-size(18);
+    }
+
+    h6 {
+        .font-size(16);        
+    }
+
+}
